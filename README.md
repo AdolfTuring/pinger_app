@@ -6,4 +6,4 @@ If the IP address can't be pinged, it counts four responses ( 60 sec) and then p
 
 Also, the app's color changes during pings.
 
-I added an EXE file for Windows PCs.
+Added an EXE for the first version file for Windows PCs.
