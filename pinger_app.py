@@ -92,14 +92,14 @@ class PingerApp:
                     response = ping(host)
                     if response is None:
                         res1 += 1
+                        if res1==3:
+                            # Play the sound
+                            sound.play()
+                            time.sleep(15)
+                            # Stop the sound
+                            sound.stop()
                     else:
                         break
-                    if res1==3:
-                        # Play the sound
-                        sound.play()
-                        time.sleep(15)
-                        # Stop the sound
-                        sound.stop()
                     time.sleep(alert_time/3)
                 
             else:
